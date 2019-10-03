@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @AllArgsConstructor
-public class BillDTO {
+public class BillRequestDTO {
 
     private BigDecimal amount;
 

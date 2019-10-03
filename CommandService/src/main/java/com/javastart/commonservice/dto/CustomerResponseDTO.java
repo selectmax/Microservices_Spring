@@ -13,16 +13,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class CustomerResponseDTO {
 
-    private String name;
+    private BillRequestDTO billDTO;
 
-    private String phone;
-
-    private String mail;
-
-    private BigDecimal amount;
-
-    private Boolean isOverdraftEnabled;
-
-
+    private AccountDTO accountDTO;
 
 }
