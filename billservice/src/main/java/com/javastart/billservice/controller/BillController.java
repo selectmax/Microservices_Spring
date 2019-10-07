@@ -27,7 +27,7 @@ public class BillController {
 
     @GetMapping("/bills/{billId}")
     public BillResponseDTO getBill(@PathVariable Long billId) {
-        return new BillResponseDTO(billService.getBillByAccountId(billId));
+        return new BillResponseDTO(billService.getBillById(billId));
     }
 
     @GetMapping("/bills_by_account/{accountId}")

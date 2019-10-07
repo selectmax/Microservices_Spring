@@ -3,8 +3,6 @@ package com.javastart.accountservice.service;
 import com.javastart.accountservice.entiry.Account;
 import com.javastart.accountservice.exceptions.AccountNotFoundException;
 import com.javastart.accountservice.repository.AccountRepository;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
