@@ -1,5 +1,6 @@
 package com.javastart.commonservice.http;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -12,6 +13,7 @@ public class RestService {
 
     private final RestTemplate restTemplate;
 
+    @Autowired
     public RestService(RestTemplate restTemplate){
         this.restTemplate = restTemplate;
     }
