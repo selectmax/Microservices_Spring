@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: update
+    properties:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/Bill_Service_Tink
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 11111

@@ -9,7 +9,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/Bill_Service_Tink
     username: postgres
-    password: 808080
+    password: 12345
     driver-class-name: org.postgresql.Driver
 server:
   port: 11111

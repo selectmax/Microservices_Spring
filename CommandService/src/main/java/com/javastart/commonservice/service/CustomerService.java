@@ -72,15 +72,15 @@ public class CustomerService {
         return new CustomerResponseDTO(billResponse, accountResponse);
     }
 
-    private AccountDTO getAccount(String url){
+    private AccountDTO getAccount(String url) {
         return serialisedAccountDTO(restService.getForEntity(url));
     }
 
-    private BillResposnseDTO getBill(String url){
+    private BillResposnseDTO getBill(String url) {
         return serialisedBillDTO(restService.getForEntity(url));
     }
 
-    private BillResposnseDTO serialisedBillDTO(ResponseEntity<String> responseEntity){
+    private BillResposnseDTO serialisedBillDTO(ResponseEntity<String> responseEntity) {
         String body = responseEntity.getBody();
         try {
             return objectMapper.readValue(body, BillResposnseDTO.class);
@@ -90,7 +90,7 @@ public class CustomerService {
         }
     }
 
-    private AccountDTO serialisedAccountDTO(ResponseEntity<String> responseEntity){
+    private AccountDTO serialisedAccountDTO(ResponseEntity<String> responseEntity) {
         String body = responseEntity.getBody();
         try {
             return objectMapper.readValue(body, AccountDTO.class);
